@@ -7,6 +7,7 @@
     <meta name="title" content="Eggy Car Unblocked - Play Online">
     <meta name="description" content="Play Eggy Car Unblocked - the addictive car game featuring a car with egg which needs to be transported and you collect coins along the way.">
     <meta name="robots" content="index, follow">
+        <link rel="canonical" href="https://brendatilley.github.io/eggy-car-unblocked/" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0PNRFG5PSL"></script>
     <script>
@@ -20,11 +21,43 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            max-width: 90%;
-            margin: 0 auto;
-            padding: 20px;
+            margin: 0;
+            padding: 0;
             color: #333;
         }
+        *{margin:0;padding:0;box-sizing:border-box;}
+        .nav-container{background:#1a237e;padding:1rem 0;position:sticky;top:0;z-index:1000;box-shadow:0 2px 5px rgba(0,0,0,0.1);width:100%;}
+        .nav-content{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 20px;}
+        .logo{color:white;font-size:1.5rem;font-weight:bold;text-decoration:none;}
+        .nav-menu{display:flex;gap:2rem;list-style:none;}
+        .nav-menu a{color:white;text-decoration:none;font-weight:500;transition:color 0.3s;}
+        .nav-menu a:hover{color:#90caf9;}
+        .mobile-menu-btn{display:none;background:none;border:none;color:white;font-size:1.5rem;cursor:pointer;}
+        @media (max-width: 768px){
+        .mobile-menu-btn{display:block;}
+        .nav-menu{display:none;position:absolute;top:100%;left:0;right:0;background:#1a237e;padding:1rem;flex-direction:column;gap:1rem;}
+        }
+        .main-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background: #1a237e;
+            color: white;
+            margin-top: 4rem;
+            width: 100%; /* Ensure full width */
+        }
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 2rem;
+        }
+        
         h1 {
             color: #ff9900;
             text-align: center;
@@ -81,8 +114,18 @@
   </style>
 </head>
 <body>
+     <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <a href="/" class="logo">Eggy Car Unblocked</a>
+            <button class="mobile-menu-btn">☰</button>
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+            </ul>
+        </div>
+    </nav>
   <div class="game-container">
- <iframe id="game-element" width="100%" height="800px" allowfullscreen="" allow="autoplay; fullscreen; camera; focus-without-user-activation *; monetization; gamepad; keyboard-map *; xr-spatial-tracking; clipboard-write" name="gameFrame" scrolling="no" sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-scripts allow-same-origin allow-downloads" src="https://webglmath.github.io/eggy-car/"></iframe>
+ <iframe id="game-element" width="100%" height="700px" allowfullscreen="" allow="autoplay; fullscreen; camera; focus-without-user-activation *; monetization; gamepad; keyboard-map *; xr-spatial-tracking; clipboard-write" name="gameFrame" scrolling="no" sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-scripts allow-same-origin allow-downloads" src="https://webglmath.github.io/eggy-car/"></iframe>
  </div>
     <div class="content">
  
